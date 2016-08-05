@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="bootstrapApp">
+<head>
+	<meta charset=utf-8>
+	<meta name=description content=".">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="node_modules/bootstrap3/dist/css/bootstrap.css">
+	<script src="node_modules/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"  ></script>
+	<script src="node_modules/bootstrap3/dist/js/bootstrap.js" type="text/javascript" charset="utf-8"  ></script>
+	<script src="node_modules/angular/angular.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="js/app.js"  type="text/javascript" charset="utf-8"  ></script>
+	<script src="js/controllers/main.ctrl.js"  type="text/javascript" charset="utf-8"  ></script>
+	<style>
+		#slide-carousel{
+			height: 400px;
+
+		}
+		section {
+			padding-top: 50px;
+		}
+		
+		p.list-group-item-text.list-group-item-hover{
+			display: none;
+		}
+		
+		a.list-group-item:hover>p.list-group-item-text.list-group-item-hover{
+			display:block;
+		}
+	</style>
+	<title></title>
+</head>
+<body ng-controller="mainCtrl">
+	<header id="header" class="">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand">Lyceum</div>
+				</div>
+				<div class="collapse navbar-collapse navbar-right" id="menu">
+					<lu class="nav navbar-nav">
+						<li><a href="#home">Lyceum</a></li>
+						<li><a href="#oquefazemos">O que fazemos?</a></li>
+						<li><a href="#solucoes">Soluções</a></li>
+						<li><a href="#contato">Contatos</a></li>
+					</lu>
+				</div>
+				
+			</div>
+			
+		</nav>
+	</header>
+	<section id="home">
+		<div class="jumbotron">
+			<div class="carousel slide" data-ride="carousel" id="slide-carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#slide-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#slide-carousel" data-slide-to="1"></li>
+					<li data-target="#slide-carousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+				 	<div id="sl1" class="item active">
+						<h1 class="text-center">Soluções Educacionais Inteligentes</h1>
+						<p class="text-center">Todos os tipos de cursos, níveis e modalidades educacionais.</p>	
+					</div>
+					<div id="sl2" class="item">
+						<h1 class="text-center">Mantenha sua instituição conectada aos alunos</h1>
+						<p class="text-center">Conecte seus alunos a sua instituição com o módulo de Mobilidade.</p>
+					</div>
+					<div id="sl3" class="item">
+						<h1 class="text-center">Gerencie sua instituição de forma eficaz e inovadora</h1>
+						<p class="text-center">Atenda a sua comunidade acadêmica através de uma Secretaria Virtual.</p>
+					</div>					
+				</div>
+			</div>			
+		</div>
+	</section>
+	<section id="oquefazemos">
+		<div class="page-header">
+			<h1>O que fazemos?</h1>	
+		</div>
+		<div class="list-group">
+			<a href="" class="list-group-item">
+				<h4 class="list-group-item-heading">Gestão Eficaz da Receita (GER)</h4>
+				<p class="list-group-item-text list-group-item-hover">Integração automática e nativa do Financeiro com o Acadêmico.</p>
+			</a>
+			<a href="" class="list-group-item">
+				<h4 class="list-group-item-heading">Ambiente Virtual de Aprendizagem</h4>
+				<p class="list-group-item-text list-group-item-hover">Integra com qualquer sistema LMS ou AVA</p>
+			</a>
+			<a href="" class="list-group-item">
+				<h4 class="list-group-item-heading">Mobilidade</h4>
+				<p class="list-group-item-text list-group-item-hover">Acesse de qualquer lugar com qualquer dispositivo.</p>
+			</a>
+			<a href="" class="list-group-item">
+				<h4 class="list-group-item-heading">Cartão de Crédito</h4>
+				<p class="list-group-item-text list-group-item-hover">Segurança e agilidade no seu faturamento.</p>
+			</a>
+			<a href="" class="list-group-item">
+				<h4 class="list-group-item-heading">Gestão de Aplicativo</h4>
+				<p class="list-group-item-text list-group-item-hover">Tenha acesso à nossa experiência para melhorar o desempenho e resolver problemas.</p>
+			</a>
+			<a href="" class="list-group-item">
+				<h4 class="list-group-item-heading">Nota Fiscal Eletrônica</h4>
+				<p class="list-group-item-text list-group-item-hover">Torne a emissão de notas fiscais muito mais fácil, rápida e prática.</p>
+			</a>
+			<a href="" class="list-group-item">
+				<h4 class="list-group-item-heading">Mensagens</h4>
+				<p class="list-group-item-text list-group-item-hover">Amplie a comunicação com seus alunos e a comunidade acadêmica.</p>
+			</a>
+			<a href="" class="list-group-item">
+				<h4 class="list-group-item-heading">Gestão de Conteúdo Corporativo</h4>
+				<p class="list-group-item-text list-group-item-hover">Gerencie os documentos e conteúdos dos processos na nuvem.</p>
+			</a>
+		</div>
+	</section>
+	<section id="solucoes">
+		<div class="page-header">
+			<h1>Soluções</h1>	
+		</div>
+		<h1 class="text-center">Escolha a solução na medida certa para sua gestão</h1>
+		<p class="lead text-center">O Lyceum foi desenvolvido para atender todos os níveis de ensino e é utilizado por instituições que são referência em gestão educacional.</p>
+		<div class="row">
+			<img src="img/lyceum-premium1.png" alt="..." class="img-rounded img-responsive center-block col-xs-12 col-sm-6 col-md-4">
+			<img src="img/lyceum-cloud.png" alt="..." class="img-rounded img-responsive center-block col-xs-12 col-sm-6 col-md-4">
+			<img src="img/lyceum-cloud-f1.png" alt="..." class="img-rounded img-responsive center-block col-xs-12 col-sm-6 col-md-4">	
+		</div>
+	</section>	
+	<section id="contato">
+	<div class="page-header">
+			<h1>Contato</h1>	
+		</div>
+		<section id="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.2793896299972!2d-46.69392721505997!3d-23.594310984666528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5738fee528bb%3A0x2039e018f7779629!2sTechne!5e0!3m2!1spt-PT!2sbr!4v1470424574730" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</section>
+		<section id="endereco">
+			<address>
+				<strong>Techne, Inc.</strong><br>
+			  Av.das Nações Unidas, nº 10989 15º Andar<br>
+			  CEP 04578-000 São Paulo SP<br>
+			  <abbr title="Telefone"><i class="glyphicon glyphicon-phone-alt"></i></abbr> (11) 2149-9200
+			  <abbr title="Email"><i class="glyphicon glyphicon-envelope"></i></abbr> info@lyceum.com.br
+			</address>
+		</section>
+	</section>
+	
+</body>
+</html>
